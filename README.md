@@ -3,7 +3,7 @@
 Copy the sources to your docker host and build the container, and to run.
 ```
 	docker build --rm -t giddens5237/nginx .
-  docker run -it --rm --name=aaa1 v- ~/df:/var/www/html -p 80:80 giddens5237/nginx
+  docker run -it --name=aaa1 -v ~/df:/var/www/html -p 80:80 giddens5237/nginx
   echo "<h1>hi<h1>" > ~/df/index.html
 ```
 Get the port that the container is listening on:
